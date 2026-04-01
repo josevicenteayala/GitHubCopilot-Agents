@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.loyalty.rewards.controller.CustomerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.788 s -- in com.loyalty.rewards.controller.CustomerControllerTest
