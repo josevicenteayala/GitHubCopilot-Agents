@@ -8,6 +8,8 @@ jobs:
   validate-pr:
     name: Validate Pull Request
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository
