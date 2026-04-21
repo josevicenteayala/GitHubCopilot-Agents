@@ -2,7 +2,7 @@
 
 **Difficulty:** 🟢 Beginner  
 **Estimated Time:** 20–30 minutes  
-**Agent:** [Code Implementation Agent](../.github/agents/code-implementation-agent.md)
+**Agent:** [Code Implementation Agent](../agents/code-implementation-agent.md)
 
 ---
 

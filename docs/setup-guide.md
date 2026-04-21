@@ -283,7 +283,7 @@ GitHubCopilot-Agents/
 │   │   └── data.sql             # Seed data loaded on startup
 │   └── test/java/
 │       └── com/loyalty/rewards/ # JUnit 5 + Mockito tests
-├── .github/agents/                      # AI agent definitions
+├── agents/                      # AI agent definitions
 ├── scenarios/                   # Hands-on exercises
 ├── docs/                        # Project documentation
 ├── .github/workflows/           # CI/CD pipelines

@@ -2,7 +2,7 @@
 
 **Difficulty:** 🟢 Beginner  
 **Estimated Time:** 20–30 minutes  
-**Agent:** [Documentation Agent](../.github/agents/documentation-agent.md)
+**Agent:** [Documentation Agent](../agents/documentation-agent.md)
 
 ---
 
@@ -196,6 +196,6 @@ Once `CustomerController` is documented, extend to the other controllers:
 
 ## 🔗 What's Next?
 
-- Review the documentation output using the [PR Review Agent](../.github/agents/pr-review-agent.md)
+- Review the documentation output using the [PR Review Agent](../agents/pr-review-agent.md)
 - Read the complete [API Reference](../docs/api-reference.md) for all endpoints
 - Return to [Scenario 01](scenario-01-complete-feature.md) and document the `EligibilityService` methods you implemented

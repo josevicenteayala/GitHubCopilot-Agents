@@ -124,18 +124,18 @@ Read the full [Domain Model](docs/domain-model.md) before starting the exercises
 
 ## 🤖 Available AI Agents
 
-Each agent has a **design doc** under `.github/agents/` (the spec) and a **reference
+Each agent has a **design doc** under `agents/` (the spec) and a **reference
 prompt file** under `.github/prompts/` (the real, invokable Copilot customisation).
 The repo-wide rules all agents share live in [`.github/copilot-instructions.md`](.github/copilot-instructions.md).
 
 | Agent | Design doc | Reference prompt | Purpose |
 |-------|------------|------------------|---------|
-| 💻 Code Implementation | [design](.github/agents/code-implementation-agent.md) | [prompt](.github/prompts/code-implementation.prompt.md) | Complete TODO methods and implement business logic |
-| 🔍 PR Review | [design](.github/agents/pr-review-agent.md) | [prompt](.github/prompts/pr-review.prompt.md) | Identify bugs, quality issues, and missing tests in PRs |
-| 📚 Documentation | [design](.github/agents/documentation-agent.md) | [prompt](.github/prompts/documentation.prompt.md) | Generate JavaDoc and OpenAPI annotations |
-| 🧪 Testing | [design](.github/agents/testing-agent.md) | [prompt](.github/prompts/testing.prompt.md) | Generate JUnit 5 + Mockito test classes |
-| 🏛️ Design & Architecture | [design](.github/agents/design-architecture-agent.md) | [prompt](.github/prompts/design-architecture.prompt.md) | Analyse architecture and recommend patterns |
-| ♻️ Refactoring | [design](.github/agents/refactoring-agent.md) | [prompt](.github/prompts/refactoring.prompt.md) | Eliminate code smells and improve code quality |
+| 💻 Code Implementation | [design](agents/code-implementation-agent.md) | [prompt](.github/prompts/code-implementation.prompt.md) | Complete TODO methods and implement business logic |
+| 🔍 PR Review | [design](agents/pr-review-agent.md) | [prompt](.github/prompts/pr-review.prompt.md) | Identify bugs, quality issues, and missing tests in PRs |
+| 📚 Documentation | [design](agents/documentation-agent.md) | [prompt](.github/prompts/documentation.prompt.md) | Generate JavaDoc and OpenAPI annotations |
+| 🧪 Testing | [design](agents/testing-agent.md) | [prompt](.github/prompts/testing.prompt.md) | Generate JUnit 5 + Mockito test classes |
+| 🏛️ Design & Architecture | [design](agents/design-architecture-agent.md) | [prompt](.github/prompts/design-architecture.prompt.md) | Analyse architecture and recommend patterns |
+| ♻️ Refactoring | [design](agents/refactoring-agent.md) | [prompt](.github/prompts/refactoring.prompt.md) | Eliminate code smells and improve code quality |
 
 Two reference **chat modes** are also provided for multi-turn sessions:
 [`senior-java-dev.chatmode.md`](.github/chatmodes/senior-java-dev.chatmode.md) and
@@ -217,10 +217,10 @@ build your own from scratch.
 | [Domain Model](docs/domain-model.md) | Business rules, entities, ERD |
 | [API Reference](docs/api-reference.md) | REST endpoints with request/response examples |
 | [Repository Copilot Instructions](.github/copilot-instructions.md) | Shared project rules attached to every Copilot request |
-| [Agents Index](.github/agents/README.md) | Design docs for all six agents + build-it-yourself guides |
+| [Agents Index](agents/README.md) | Design docs for all six agents + build-it-yourself guides |
 | [Reference Prompts](.github/prompts/) | Invokable `*.prompt.md` files |
 | [Reference Chat Modes](.github/chatmodes/) | Reusable `*.chatmode.md` personas |
-| [Cloud Coding Agent Setup](.github/agents/coding-agent-setup.md) | Customising the autonomous Copilot coding agent |
+| [Cloud Coding Agent Setup](agents/coding-agent-setup.md) | Customising the autonomous Copilot coding agent |
 | [Scenarios Index](scenarios/README.md) | All hands-on exercises |
 
 ---
@@ -234,7 +234,7 @@ Contributions are welcome! To contribute:
 3. Make your changes and ensure `mvn test` passes
 4. Open a pull request with a clear description
 
-Please use the [PR Review Agent](.github/agents/pr-review-agent.md) to self-review your PR before submitting.
+Please use the [PR Review Agent](agents/pr-review-agent.md) to self-review your PR before submitting.
 
 ---
 

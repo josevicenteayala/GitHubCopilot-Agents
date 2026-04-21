@@ -16,7 +16,7 @@ that the other scenarios depend on. By the end you will have:
 2. A custom chat mode you can select from the chat mode picker.
 3. A repository instructions file that applies to every Copilot request in this repo.
 
-This turns the files under [`.github/agents/`](../.github/agents/) from
+This turns the files under [`agents/`](../agents/) from
 *reading material* into **actual Copilot customisations** running against the
 loyalty rewards code.
 
@@ -31,7 +31,7 @@ loyalty rewards code.
 - [ ] GitHub Copilot Chat is installed in **VS Code** (1.90+) and you are signed in.
 - [ ] The repo builds: `mvn compile`.
 - [ ] You have read the project rules in [`.github/copilot-instructions.md`](../.github/copilot-instructions.md).
-- [ ] You have skimmed [`.github/agents/README.md`](../.github/agents/README.md)
+- [ ] You have skimmed [`agents/README.md`](../agents/README.md)
       so you know which six agents exist.
 
 ---
@@ -47,7 +47,7 @@ GitHub Copilot supports three kinds of customisation that live in the repo:
 | **Custom chat mode** | `.github/chatmodes/<name>.chatmode.md` | Selecting it from the chat-mode picker | A whole conversation |
 
 A fourth surface — the **Copilot coding agent** (cloud) — is covered in the
-optional appendix [`.github/agents/coding-agent-setup.md`](../.github/agents/coding-agent-setup.md).
+optional appendix [`agents/coding-agent-setup.md`](../agents/coding-agent-setup.md).
 
 In this scenario you will create one of each of the first three.
 
@@ -84,7 +84,7 @@ and focus on the *specialty* of your agent.
 
 ### Step 2 — Build a prompt file (Testing Agent)
 
-1. Open the design doc at [`.github/agents/testing-agent.md`](../.github/agents/testing-agent.md)
+1. Open the design doc at [`agents/testing-agent.md`](../agents/testing-agent.md)
    and read the **"🧩 GitHub Copilot Prompt / Instructions"** section — this is the
    raw content you are about to turn into a real Copilot prompt file.
 
@@ -194,7 +194,7 @@ mutable builder is genuinely needed."* Keep it short and testable.
    instructive.)
 3. How would this change if you were running the **Copilot coding agent** in the
    cloud instead of Copilot Chat locally?
-   See [`.github/agents/coding-agent-setup.md`](../.github/agents/coding-agent-setup.md).
+   See [`agents/coding-agent-setup.md`](../agents/coding-agent-setup.md).
 
 ---
 

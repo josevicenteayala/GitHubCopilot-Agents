@@ -2,7 +2,7 @@
 
 **Difficulty:** 🟡 Intermediate  
 **Estimated Time:** 25–35 minutes  
-**Agent:** [PR Review Agent](../.github/agents/pr-review-agent.md)
+**Agent:** [PR Review Agent](../agents/pr-review-agent.md)
 
 ---
 
@@ -167,6 +167,6 @@ Create a short (1-page) review summary that you would post as a PR comment. Incl
 ## 🔗 What's Next?
 
 After completing this review:
-- Fix the critical bugs using the [Code Implementation Agent](../.github/agents/code-implementation-agent.md)
-- Add missing tests using the [Testing Agent](../.github/agents/testing-agent.md)
+- Fix the critical bugs using the [Code Implementation Agent](../agents/code-implementation-agent.md)
+- Add missing tests using the [Testing Agent](../agents/testing-agent.md)
 - See [Scenario 04 — Refactor the Transaction Service](scenario-04-refactor-code.md) for further clean-up

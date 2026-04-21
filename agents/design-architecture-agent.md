@@ -155,8 +155,8 @@ This document is the **design specification**. Commit it as a real Copilot
 customisation to invoke it from Copilot Chat.
 
 > 📖 See
-> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
-> Reference file: [`../prompts/design-architecture.prompt.md`](../prompts/design-architecture.prompt.md).
+> [Scenario 0 — Author your first Copilot agent](../scenarios/scenario-00-create-an-agent.md).
+> Reference file: [`../.github/prompts/design-architecture.prompt.md`](../.github/prompts/design-architecture.prompt.md).
 
 ### Track A — Prompt file (recommended)
 
@@ -174,7 +174,7 @@ tools: ['codebase', 'search', 'usages']
 Keep the six report sections (Overview, Strengths, Issues, Recommendations, Pattern
 Opportunities, Scalability) and the severity tags (`CRITICAL` / `MAJOR` / `MINOR`)
 in the body. The tech stack is inherited from
-[`../copilot-instructions.md`](../copilot-instructions.md) — don't repeat it.
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) — don't repeat it.
 
 ### Track B — Custom chat mode
 
@@ -186,7 +186,7 @@ Create `.github/chatmodes/architect.chatmode.md` with read-only tools
 
 Architectural *principles* (SOLID, `@Transactional` at service layer only,
 controllers stay thin) belong in
-[`../copilot-instructions.md`](../copilot-instructions.md) — they are already there.
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) — they are already there.
 Leave specialised architectural analysis (pattern opportunities, scalability
 assessments, ADR-style trade-offs) in this agent.
 

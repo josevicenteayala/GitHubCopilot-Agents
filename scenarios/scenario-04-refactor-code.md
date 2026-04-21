@@ -2,7 +2,7 @@
 
 **Difficulty:** 🟡 Intermediate  
 **Estimated Time:** 30–40 minutes  
-**Agent:** [Refactoring Agent](../.github/agents/refactoring-agent.md)
+**Agent:** [Refactoring Agent](../agents/refactoring-agent.md)
 
 ---
 

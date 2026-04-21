@@ -162,9 +162,9 @@ This document is the **design specification**. To invoke it from Copilot Chat,
 commit it as a real Copilot customisation.
 
 > 📖 Start with
-> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
+> [Scenario 0 — Author your first Copilot agent](../scenarios/scenario-00-create-an-agent.md).
 > Reference implementation:
-> [`../prompts/documentation.prompt.md`](../prompts/documentation.prompt.md).
+> [`../.github/prompts/documentation.prompt.md`](../.github/prompts/documentation.prompt.md).
 
 ### Track A — Prompt file
 
@@ -181,7 +181,7 @@ tools: ['codebase', 'editFiles', 'search', 'usages']
 In the body, keep the JavaDoc / OpenAPI / README standards from the
 [🧩 prompt block](#-github-copilot-prompt--instructions) above, but drop the
 Spring Boot version — that's already in
-[`../copilot-instructions.md`](../copilot-instructions.md).
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md).
 
 ### Track B — Custom chat mode
 
@@ -191,7 +191,7 @@ agent cannot accidentally rewrite business logic while adding docs.
 
 ### Track C — Repository instructions
 
-Consider adding this to [`../copilot-instructions.md`](../copilot-instructions.md):
+Consider adding this to [`../.github/copilot-instructions.md`](../.github/copilot-instructions.md):
 *"Every public class and public method gets a JavaDoc block; trivial getters/setters
 do not."* That rule belongs repo-wide, not just in the Documentation Agent.
 

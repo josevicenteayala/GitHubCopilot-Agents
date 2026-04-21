@@ -1,10 +1,10 @@
 # 🚀 Appendix — Customising the Copilot Coding Agent
 
 > **Audience:** students who have already completed
-> [Scenario 0](../../scenarios/scenario-00-create-an-agent.md) and are comfortable with
+> [Scenario 0](../scenarios/scenario-00-create-an-agent.md) and are comfortable with
 > prompt files and chat modes.
 
-The [reference prompt files](../prompts/) and [chat modes](../chatmodes/) customise
+The [reference prompt files](../.github/prompts/) and [chat modes](../.github/chatmodes/) customise
 **Copilot Chat** — the agent that runs in your editor. GitHub also ships a
 **cloud-hosted Copilot coding agent** that picks up issues or PR comments, spins up a
 container, and opens pull requests autonomously. Customising that agent requires
@@ -71,7 +71,7 @@ compiled — so the first `mvn test` inside a task is a near-instant incremental
 
 ## 2. Share project rules via `copilot-instructions.md`
 
-No change needed — this repo already has [`.github/copilot-instructions.md`](../copilot-instructions.md).
+No change needed — this repo already has [`.github/copilot-instructions.md`](../.github/copilot-instructions.md).
 The cloud agent reads it before every task, so the same domain rules that guide your
 editor-side agents also guide autonomous PRs.
 
@@ -111,7 +111,7 @@ safeguards:
 
 So your repo-wide instructions are **shared** across both surfaces, but prompt files
 and chat modes are editor-only — which is why
-[Scenario 0](../../scenarios/scenario-00-create-an-agent.md) has you build one of each.
+[Scenario 0](../scenarios/scenario-00-create-an-agent.md) has you build one of each.
 
 ---
 

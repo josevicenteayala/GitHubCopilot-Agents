@@ -241,9 +241,9 @@ This document is the **design specification** for the agent. To invoke it from
 Copilot Chat, commit it as a real Copilot customisation.
 
 > 📖 Work through
-> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md)
+> [Scenario 0 — Author your first Copilot agent](../scenarios/scenario-00-create-an-agent.md)
 > first. The reference implementation ships at
-> [`../prompts/testing.prompt.md`](../prompts/testing.prompt.md).
+> [`../.github/prompts/testing.prompt.md`](../.github/prompts/testing.prompt.md).
 
 ### Track A — Prompt file (recommended)
 
@@ -260,7 +260,7 @@ tools: ['codebase', 'editFiles', 'findTestFiles', 'problems', 'search', 'usages'
 In the body, keep **only** the rules specific to test authorship (method naming,
 AAA structure, coverage checklist, one behaviour per test, output format).
 The Mockito / JUnit versions and "no `@SpringBootTest` for service tests" rule are
-already in [`../copilot-instructions.md`](../copilot-instructions.md).
+already in [`../.github/copilot-instructions.md`](../.github/copilot-instructions.md).
 
 ### Track B — Custom chat mode
 
@@ -272,7 +272,7 @@ Limit the tools to `editFiles`, `findTestFiles`, and `codebase`.
 ### Track C — Repository instructions
 
 The **Testing Conventions** section of
-[`../copilot-instructions.md`](../copilot-instructions.md) already covers
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) already covers
 `@ExtendWith(MockitoExtension.class)`, `should_X_when_Y` naming, AAA,
 and coverage targets — so every Copilot request in this repo (not just the
 Testing Agent) follows them. Leave it there; keep this agent focused on the

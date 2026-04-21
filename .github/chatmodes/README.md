@@ -24,7 +24,7 @@ Selecting a custom mode loads:
 ## How to build your own
 
 Follow [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
-Each agent file under [`../agents/`](../agents/) includes a
+Each agent file under [`../../agents/`](../../agents/) includes a
 **"🏗️ Build this agent yourself"** section with per-agent chat-mode instructions.
 
 ## Front-matter reference

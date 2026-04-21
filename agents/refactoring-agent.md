@@ -210,8 +210,8 @@ This document is the **design specification**. To invoke the agent from Copilot
 Chat, commit it as a real Copilot customisation.
 
 > 📖 See
-> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
-> Reference file: [`../prompts/refactoring.prompt.md`](../prompts/refactoring.prompt.md).
+> [Scenario 0 — Author your first Copilot agent](../scenarios/scenario-00-create-an-agent.md).
+> Reference file: [`../.github/prompts/refactoring.prompt.md`](../.github/prompts/refactoring.prompt.md).
 
 ### Track A — Prompt file (recommended)
 
@@ -229,7 +229,7 @@ Keep the nine non-negotiable rules and the per-change output format
 (`Refactoring name`, `Before`, `After`, `Rationale`) from the
 [🧩 prompt block](#-github-copilot-prompt--instructions). The tech stack and
 Java 17 idiom list are inherited from
-[`../copilot-instructions.md`](../copilot-instructions.md) — drop them here.
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) — drop them here.
 
 ### Track B — Custom chat mode
 
@@ -242,7 +242,7 @@ each step.
 
 The rule *"Never change observable behaviour"* already belongs in every Copilot
 interaction in this repo — consider adding it to
-[`../copilot-instructions.md`](../copilot-instructions.md) if it isn't already
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) if it isn't already
 covered implicitly by "confirm `mvn test` passes before completing any code
 change."
 

@@ -193,10 +193,10 @@ This document is the **design specification** for the agent. To invoke it from
 Copilot Chat you need to commit it as a real Copilot customisation.
 
 > 📖 New to this? Work through
-> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md)
+> [Scenario 0 — Author your first Copilot agent](../scenarios/scenario-00-create-an-agent.md)
 > first. Reference files already ship at
-> [`../prompts/pr-review.prompt.md`](../prompts/pr-review.prompt.md) and
-> [`../chatmodes/code-reviewer.chatmode.md`](../chatmodes/code-reviewer.chatmode.md).
+> [`../.github/prompts/pr-review.prompt.md`](../.github/prompts/pr-review.prompt.md) and
+> [`../.github/chatmodes/code-reviewer.chatmode.md`](../.github/chatmodes/code-reviewer.chatmode.md).
 
 ### Track A — Prompt file
 
@@ -214,7 +214,7 @@ Use `mode: ask` — this agent analyses and reports; it does **not** edit code.
 The body should specify the six review sections and the severity tags defined
 in the [🧩 GitHub Copilot Prompt / Instructions](#-github-copilot-prompt--instructions)
 block above. Drop anything already covered by
-[`../copilot-instructions.md`](../copilot-instructions.md).
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md).
 
 ### Track B — Custom chat mode
 
@@ -226,7 +226,7 @@ tools and a short list of "red flags you must always check".
 
 The review rules in this agent that apply to *every* contributor (constructor
 injection, `@Transactional` placement, controllers stay thin, …) already live in
-[`../copilot-instructions.md`](../copilot-instructions.md). Any reviewer-only rules
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md). Any reviewer-only rules
 (e.g. "group comments by severity") stay in this agent — not in the repo-wide file.
 
 ---

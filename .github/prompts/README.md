@@ -1,7 +1,7 @@
 # `.github/prompts/` — Reference Prompt Files
 
 This directory contains **working reference implementations** of the six agents
-described in [`../agents/`](../agents/). Each file is a real GitHub Copilot
+described in [`../../agents/`](../../agents/). Each file is a real GitHub Copilot
 **prompt file** that you can invoke from Copilot Chat.
 
 ## How these files work
@@ -28,7 +28,7 @@ GitHub Copilot in VS Code discovers any file ending in `.prompt.md` under
 
 See [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md)
 for a step-by-step walkthrough that produces a file equivalent to one of these.
-Each agent file under [`../agents/`](../agents/) also contains a
+Each agent file under [`../../agents/`](../../agents/) also contains a
 **"🏗️ Build this agent yourself"** section linking back here.
 
 ## Front-matter reference

@@ -87,11 +87,11 @@ Before starting, read the [Domain Model](../docs/domain-model.md) to understand:
 | Agent | Design doc | Reference prompt | Used In |
 |-------|------------|------------------|---------|
 | *(any)* | — | — | Scenario 00 (build one yourself) |
-| Code Implementation | [design](../.github/agents/code-implementation-agent.md) | [prompt](../.github/prompts/code-implementation.prompt.md) | Scenario 01 |
-| PR Review | [design](../.github/agents/pr-review-agent.md) | [prompt](../.github/prompts/pr-review.prompt.md) | Scenario 02 |
-| Testing | [design](../.github/agents/testing-agent.md) | [prompt](../.github/prompts/testing.prompt.md) | Scenario 03 |
-| Refactoring | [design](../.github/agents/refactoring-agent.md) | [prompt](../.github/prompts/refactoring.prompt.md) | Scenario 04 |
-| Documentation | [design](../.github/agents/documentation-agent.md) | [prompt](../.github/prompts/documentation.prompt.md) | Scenario 05 |
+| Code Implementation | [design](../agents/code-implementation-agent.md) | [prompt](../.github/prompts/code-implementation.prompt.md) | Scenario 01 |
+| PR Review | [design](../agents/pr-review-agent.md) | [prompt](../.github/prompts/pr-review.prompt.md) | Scenario 02 |
+| Testing | [design](../agents/testing-agent.md) | [prompt](../.github/prompts/testing.prompt.md) | Scenario 03 |
+| Refactoring | [design](../agents/refactoring-agent.md) | [prompt](../.github/prompts/refactoring.prompt.md) | Scenario 04 |
+| Documentation | [design](../agents/documentation-agent.md) | [prompt](../.github/prompts/documentation.prompt.md) | Scenario 05 |
 
 ---
 

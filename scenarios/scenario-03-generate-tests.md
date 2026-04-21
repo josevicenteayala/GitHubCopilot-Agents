@@ -2,7 +2,7 @@
 
 **Difficulty:** 🟡 Intermediate  
 **Estimated Time:** 30–40 minutes  
-**Agent:** [Testing Agent](../.github/agents/testing-agent.md)  
+**Agent:** [Testing Agent](../agents/testing-agent.md)  
 **Prerequisite:** Complete [Scenario 01](scenario-01-complete-feature.md) first
 
 ---

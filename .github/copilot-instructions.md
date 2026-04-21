@@ -2,7 +2,7 @@
 
 These instructions are automatically included in every GitHub Copilot request made in this
 repository (Chat, inline suggestions, and the Copilot coding agent). They provide the
-project-wide context that every agent in `.github/agents/` relies on.
+project-wide context that every agent in [`agents/`](../agents/) relies on.
 
 > 📚 **For students:** This file is a worked example of a repository-level Copilot
 > instructions file. It is loaded by Copilot whenever you work in this repo. When you

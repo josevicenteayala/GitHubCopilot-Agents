@@ -150,9 +150,9 @@ from Copilot Chat you need to commit it as a real Copilot customisation. There a
 three tracks — pick one (or do all three as learning exercises).
 
 > 📖 New to this? Start with
-> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
+> [Scenario 0 — Author your first Copilot agent](../scenarios/scenario-00-create-an-agent.md).
 > The reference implementation already exists at
-> [`../prompts/code-implementation.prompt.md`](../prompts/code-implementation.prompt.md) —
+> [`../.github/prompts/code-implementation.prompt.md`](../.github/prompts/code-implementation.prompt.md) —
 > compare your version to it when you are done.
 
 ### Track A — Prompt file (recommended first)
@@ -169,13 +169,13 @@ tools: ['codebase', 'editFiles', 'findTestFiles', 'problems', 'search', 'usages'
 
 Paste a trimmed version of the [🧩 GitHub Copilot Prompt / Instructions](#-github-copilot-prompt--instructions)
 block above as the body. **Drop** any rule already covered by
-[`../copilot-instructions.md`](../copilot-instructions.md) (tech stack, domain rules,
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) (tech stack, domain rules,
 constructor injection) — keep only the rules specific to *implementing* code.
 
 ### Track B — Custom chat mode
 
 Create `.github/chatmodes/senior-java-dev.chatmode.md` (a reference version already
-ships at [`../chatmodes/senior-java-dev.chatmode.md`](../chatmodes/senior-java-dev.chatmode.md)).
+ships at [`../.github/chatmodes/senior-java-dev.chatmode.md`](../.github/chatmodes/senior-java-dev.chatmode.md)).
 The persona body should describe how a senior developer works across a
 **multi-turn** session — read-before-write, reuse helpers, small steps, leave tests
 green — rather than rules for a single invocation.
@@ -184,7 +184,7 @@ green — rather than rules for a single invocation.
 
 Everything in the **"You are a senior Java developer …"** preamble that applies to
 *every* task in this repo is already in
-[`../copilot-instructions.md`](../copilot-instructions.md) (tech stack, domain rules,
+[`../.github/copilot-instructions.md`](../.github/copilot-instructions.md) (tech stack, domain rules,
 coding conventions). If you identify additional repo-wide rules while implementing
 a feature, add them there so **every** agent benefits.
 
