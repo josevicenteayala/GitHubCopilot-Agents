@@ -62,7 +62,7 @@ Focus on the WHY and the business rules, not just the WHAT.
 **Copilot prompt to use:**
 
 ```
-@workspace Add complete documentation to CustomerController.java:
+#codebase Add complete documentation to CustomerController.java:
 
 1. Add @Tag(name = "Customers", description = "...") to the class
 2. Add @Operation annotations to each endpoint with meaningful summary and description

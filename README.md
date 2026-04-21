@@ -182,11 +182,17 @@ Open the chat panel and ask questions about the code:
 - *"Why does hasMinimumPoints return true when loyaltyPoints equals minPoints?"*
 - *"What tests are missing from CustomerServiceTest?"*
 
-### Using `@workspace`
-Prefix your prompt with `@workspace` to give Copilot access to your full project:
+### Using `#codebase`
+Add `#codebase` to your prompt (in Ask mode) to give Copilot access to your full
+project. In Agent mode, Copilot can already search the workspace, but you can still
+attach `#codebase` to force a workspace-wide search:
 ```
-@workspace Complete the isEligibleForOffer method using the helper methods in the class
+#codebase Complete the isEligibleForOffer method using the helper methods in the class
 ```
+
+> ℹ️ `#codebase` replaces the deprecated `@workspace` chat participant. You can also
+> scope context more narrowly with `#file:<path>`, `#selection`, `#changes`,
+> `#problems`, etc.
 
 ### Custom Agents (prompt files & chat modes)
 Activate one of the six agents shipped in `.github/prompts/` (via the `/` picker)

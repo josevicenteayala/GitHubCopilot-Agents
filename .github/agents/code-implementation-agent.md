@@ -74,7 +74,7 @@ Also implement checkTransactionLimit() using transactionRepository.findByCustome
 **Copilot prompt to use:**
 
 ```
-@workspace Implement the two TODO methods in EligibilityService.java:
+#codebase Implement the two TODO methods in EligibilityService.java:
 
 1. isEligibleForOffer(Customer customer, Offer offer):
    - Return true only if ALL of these are true:
@@ -123,7 +123,7 @@ public boolean checkTransactionLimit(Long customerId, int maxTransactions) {
 | Tip | Detail |
 |-----|--------|
 | **Give full file context** | Open the target file in your editor before prompting Copilot Chat |
-| **Reference the `@workspace`** | Use `@workspace` so Copilot can see related files (repositories, domain classes) |
+| **Reference the `#codebase`** | Add `#codebase` (the replacement for the deprecated `@workspace`) so Copilot can see related files (repositories, domain classes) |
 | **Specify what NOT to change** | Tell Copilot "do not modify the existing helper methods" to prevent over-engineering |
 | **Verify with tests** | Always run `mvn test` after implementation to confirm correctness |
 | **Ask for edge-case reasoning** | Follow up with "What happens if the offer has no targetTier set?" |

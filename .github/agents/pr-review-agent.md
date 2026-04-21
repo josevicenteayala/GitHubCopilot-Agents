@@ -85,7 +85,7 @@ public ResponseEntity<Map<String, Object>> getTransactionSummary(@PathVariable L
 **Copilot prompt to use:**
 
 ```
-@workspace Review this new endpoint added to TransactionController. Apply the PR Review Agent
+#codebase Review this new endpoint added to TransactionController. Apply the PR Review Agent
 instructions and produce a full structured review report.
 
 Code to review:

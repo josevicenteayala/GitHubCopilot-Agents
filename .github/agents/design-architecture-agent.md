@@ -64,7 +64,7 @@ Apply these architectural principles:
 **Copilot prompt to use:**
 
 ```
-@workspace Perform an architectural review of the service layer in the loyalty rewards application.
+#codebase Perform an architectural review of the service layer in the loyalty rewards application.
 Focus on:
 
 1. The relationship between EligibilityService, TransactionService, and CustomerService

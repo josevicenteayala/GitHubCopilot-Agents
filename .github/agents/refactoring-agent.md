@@ -93,7 +93,7 @@ public Transaction createTransaction(Long customerId, Double amount,
 **Copilot prompt to use:**
 
 ```
-@workspace Refactor TransactionService.java to address these code smells:
+#codebase Refactor TransactionService.java to address these code smells:
 
 1. The inline calculation `(int)(amount * 10)` is a magic number — extract to the existing
    POINTS_PER_DOLLAR constant (which already exists in the class)

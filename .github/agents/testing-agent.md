@@ -63,7 +63,7 @@ Coverage target: 80% line coverage, 75% branch coverage minimum.
 **Copilot prompt to use:**
 
 ```
-@workspace Generate a complete JUnit 5 test class for EligibilityService.
+#codebase Generate a complete JUnit 5 test class for EligibilityService.
 
 The class has these public methods to test:
 - isEligibleForOffer(Customer customer, Offer offer) — the main method (AND of four conditions)
