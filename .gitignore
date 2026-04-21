@@ -32,3 +32,7 @@ logs/
 
 # Spring Boot DevTools
 .spring-boot-devtools.properties
+
+# Python
+__pycache__/
+*.pyc
