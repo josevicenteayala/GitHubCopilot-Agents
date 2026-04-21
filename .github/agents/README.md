@@ -1,5 +1,15 @@
 # 🤖 AI Agents Index
 
+> ⚠️ **This folder is not auto-loaded by GitHub Copilot.** The Markdown files here
+> are **human-facing design templates** that describe each agent's role, system
+> prompt, and conventions. Copilot only auto-discovers files in three locations:
+> [`../copilot-instructions.md`](../copilot-instructions.md),
+> [`../prompts/*.prompt.md`](../prompts/), and
+> [`../chatmodes/*.chatmode.md`](../chatmodes/). To turn a template in this folder
+> into a real agent that Copilot can invoke, follow the **"🏗️ Build this agent
+> yourself"** section inside that template — it walks you through creating the
+> corresponding prompt file or chat mode.
+
 This directory contains the **design specifications** for six GitHub Copilot agents
 tailored to the loyalty rewards Spring Boot application. Each file documents a
 specialist persona — its role, system prompt, conventions, and expected outputs —

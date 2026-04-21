@@ -27,7 +27,19 @@ The Code Implementation Agent acts as an experienced Java developer who deeply u
 
 ## 🧩 GitHub Copilot Prompt / Instructions
 
-Use the following prompt in GitHub Copilot Chat to activate this agent's behaviour:
+The block below is the agent's **system prompt / persona**. It is *not* auto-loaded by
+Copilot from this file. To turn it into a real, reusable agent, copy it into one of the
+two surfaces that Copilot does discover automatically:
+
+- **Prompt file** — save as `.github/prompts/<name>.prompt.md` to expose it as a
+  `/<name>` slash command in Copilot Chat.
+- **Chat mode** — save as `.github/chatmodes/<name>.chatmode.md` to expose it in the
+  Copilot Chat mode picker as a persistent persona.
+
+See the **"🏗️ Build this agent yourself"** section further down for the exact steps.
+For a quick one-off trial without committing a file, you can also paste the block into
+a fresh Copilot Chat conversation — but the persona will only last for that single
+conversation.
 
 ```
 You are a senior Java developer working on a Spring Boot 3.x loyalty rewards application.
