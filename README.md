@@ -123,7 +123,7 @@ Read the full [Domain Model](docs/domain-model.md) before starting the exercises
 ### How to Use an Agent
 
 1. Open **GitHub Copilot Chat** in VS Code (`Ctrl+Shift+I`) or IntelliJ
-2. Open the agent's `.md` file and copy the text from the **"GitHub Copilot Prompt / Instructions"** section
+2. Open the agent's `.md` file under `.github/agents/` and copy the text from the **"🧩 GitHub Copilot Prompt / Instructions"** section inside that file
 3. Paste it at the top of a new Copilot Chat conversation
 4. Ask your task-specific question
 
