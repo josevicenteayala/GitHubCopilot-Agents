@@ -204,6 +204,63 @@ from business logic. Single Responsibility Principle.
 
 ---
 
+## 🏗️ Build This Agent Yourself
+
+This document is the **design specification**. To invoke the agent from Copilot
+Chat, commit it as a real Copilot customisation.
+
+> 📖 See
+> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
+> Reference file: [`../prompts/refactoring.prompt.md`](../prompts/refactoring.prompt.md).
+
+### Track A — Prompt file (recommended)
+
+Create `.github/prompts/refactoring.prompt.md`:
+
+```yaml
+---
+mode: agent
+description: Identify code smells and apply safe, behaviour-preserving refactors.
+tools: ['codebase', 'editFiles', 'findTestFiles', 'problems', 'search', 'usages']
+---
+```
+
+Keep the nine non-negotiable rules and the per-change output format
+(`Refactoring name`, `Before`, `After`, `Rationale`) from the
+[🧩 prompt block](#-github-copilot-prompt--instructions). The tech stack and
+Java 17 idiom list are inherited from
+[`../copilot-instructions.md`](../copilot-instructions.md) — drop them here.
+
+### Track B — Custom chat mode
+
+Create `.github/chatmodes/refactorer.chatmode.md` for multi-turn sessions
+("identify smells → apply one → run tests → apply the next"). Include
+`findTestFiles` and `problems` in the tool allow-list so the persona can verify
+each step.
+
+### Track C — Repository instructions
+
+The rule *"Never change observable behaviour"* already belongs in every Copilot
+interaction in this repo — consider adding it to
+[`../copilot-instructions.md`](../copilot-instructions.md) if it isn't already
+covered implicitly by "confirm `mvn test` passes before completing any code
+change."
+
+---
+
+## ✅ How to Verify Your Agent Works
+
+- [ ] `/refactoring` appears in the Copilot Chat picker.
+- [ ] Running the agent on `TransactionService.createTransaction()` produces:
+  - A numbered list of applied refactorings, each with a Fowler name.
+  - Before / After snippets for each change.
+  - The fully refactored file in a single Java code block.
+  - A "tests still pass" note listing the affected test classes.
+- [ ] `mvn test` remains green after applying the refactoring.
+- [ ] The existing `POINTS_PER_DOLLAR` constant is *referenced*, not duplicated.
+
+---
+
 ## 🔗 Related Agents
 
 - [Testing Agent](testing-agent.md) — ensure test coverage before and after refactoring

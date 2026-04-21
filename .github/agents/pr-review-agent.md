@@ -187,6 +187,63 @@ Required tests:
 
 ---
 
+## 🏗️ Build This Agent Yourself
+
+This document is the **design specification** for the agent. To invoke it from
+Copilot Chat you need to commit it as a real Copilot customisation.
+
+> 📖 New to this? Work through
+> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md)
+> first. Reference files already ship at
+> [`../prompts/pr-review.prompt.md`](../prompts/pr-review.prompt.md) and
+> [`../chatmodes/code-reviewer.chatmode.md`](../chatmodes/code-reviewer.chatmode.md).
+
+### Track A — Prompt file
+
+Create `.github/prompts/pr-review.prompt.md`:
+
+```yaml
+---
+mode: ask
+description: Perform a structured pull request review on Java Spring Boot code.
+tools: ['codebase', 'findTestFiles', 'problems', 'search', 'usages', 'changes']
+---
+```
+
+Use `mode: ask` — this agent analyses and reports; it does **not** edit code.
+The body should specify the six review sections and the severity tags defined
+in the [🧩 GitHub Copilot Prompt / Instructions](#-github-copilot-prompt--instructions)
+block above. Drop anything already covered by
+[`../copilot-instructions.md`](../copilot-instructions.md).
+
+### Track B — Custom chat mode
+
+Create `.github/chatmodes/code-reviewer.chatmode.md`. The persona should never write
+production code — it only produces review feedback. Give it the same `ask`-style
+tools and a short list of "red flags you must always check".
+
+### Track C — Repository instructions
+
+The review rules in this agent that apply to *every* contributor (constructor
+injection, `@Transactional` placement, controllers stay thin, …) already live in
+[`../copilot-instructions.md`](../copilot-instructions.md). Any reviewer-only rules
+(e.g. "group comments by severity") stay in this agent — not in the repo-wide file.
+
+---
+
+## ✅ How to Verify Your Agent Works
+
+- [ ] The file exists at the correct path and is committed.
+- [ ] After reloading VS Code, `/pr-review` appears in the Copilot Chat picker.
+- [ ] Feeding it the sample diff from [💡 Example Usage](#-example-usage) produces
+      a report with **all six sections** (Summary, Critical, Warnings,
+      Suggestions, Test Coverage, Verdict).
+- [ ] Every issue has a file+line reference and a concrete code fix.
+- [ ] The agent flags the missing customer existence check as 🔴 Critical, the
+      inefficient loop as 🟡 Warning, and the missing tests in the coverage section.
+
+---
+
 ## 🔗 Related Agents
 
 - [Testing Agent](testing-agent.md) — generate missing tests identified in the review

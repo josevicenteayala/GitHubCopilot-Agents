@@ -149,6 +149,61 @@ event sourcing for the points ledger.
 
 ---
 
+## 🏗️ Build This Agent Yourself
+
+This document is the **design specification**. Commit it as a real Copilot
+customisation to invoke it from Copilot Chat.
+
+> 📖 See
+> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
+> Reference file: [`../prompts/design-architecture.prompt.md`](../prompts/design-architecture.prompt.md).
+
+### Track A — Prompt file (recommended)
+
+Create `.github/prompts/design-architecture.prompt.md` with `mode: ask` — this agent
+produces reports, not code changes:
+
+```yaml
+---
+mode: ask
+description: Review architecture, identify design issues, and recommend improvements.
+tools: ['codebase', 'search', 'usages']
+---
+```
+
+Keep the six report sections (Overview, Strengths, Issues, Recommendations, Pattern
+Opportunities, Scalability) and the severity tags (`CRITICAL` / `MAJOR` / `MINOR`)
+in the body. The tech stack is inherited from
+[`../copilot-instructions.md`](../copilot-instructions.md) — don't repeat it.
+
+### Track B — Custom chat mode
+
+Architecture reviews benefit from back-and-forth, so a chat mode works well here.
+Create `.github/chatmodes/architect.chatmode.md` with read-only tools
+(`codebase`, `search`, `usages`) so the agent cannot edit code while it reasons.
+
+### Track C — Repository instructions
+
+Architectural *principles* (SOLID, `@Transactional` at service layer only,
+controllers stay thin) belong in
+[`../copilot-instructions.md`](../copilot-instructions.md) — they are already there.
+Leave specialised architectural analysis (pattern opportunities, scalability
+assessments, ADR-style trade-offs) in this agent.
+
+---
+
+## ✅ How to Verify Your Agent Works
+
+- [ ] `/design-architecture` appears in the Copilot Chat picker.
+- [ ] Running the agent on *"Review the service layer"* produces a report with
+      **all six sections** in order.
+- [ ] Each Issue is tagged `CRITICAL` / `MAJOR` / `MINOR`.
+- [ ] Each Recommendation includes a concrete code sketch.
+- [ ] The report identifies at least one anaemic-domain-model concern — the
+      `Customer` entity currently has no behaviour of its own.
+
+---
+
 ## 🔗 Related Agents
 
 - [Refactoring Agent](refactoring-agent.md) — implement architectural recommendations

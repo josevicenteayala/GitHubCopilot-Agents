@@ -156,6 +156,61 @@ curl -X POST http://localhost:8080/api/customers \
 
 ---
 
+## 🏗️ Build This Agent Yourself
+
+This document is the **design specification**. To invoke it from Copilot Chat,
+commit it as a real Copilot customisation.
+
+> 📖 Start with
+> [Scenario 0 — Author your first Copilot agent](../../scenarios/scenario-00-create-an-agent.md).
+> Reference implementation:
+> [`../prompts/documentation.prompt.md`](../prompts/documentation.prompt.md).
+
+### Track A — Prompt file
+
+Create `.github/prompts/documentation.prompt.md`:
+
+```yaml
+---
+mode: agent
+description: Generate JavaDoc, OpenAPI annotations, and README sections.
+tools: ['codebase', 'editFiles', 'search', 'usages']
+---
+```
+
+In the body, keep the JavaDoc / OpenAPI / README standards from the
+[🧩 prompt block](#-github-copilot-prompt--instructions) above, but drop the
+Spring Boot version — that's already in
+[`../copilot-instructions.md`](../copilot-instructions.md).
+
+### Track B — Custom chat mode
+
+Documentation work is single-shot in practice — prefer a prompt file.
+If you do create a chat mode, restrict tools to `editFiles` + `codebase` so the
+agent cannot accidentally rewrite business logic while adding docs.
+
+### Track C — Repository instructions
+
+Consider adding this to [`../copilot-instructions.md`](../copilot-instructions.md):
+*"Every public class and public method gets a JavaDoc block; trivial getters/setters
+do not."* That rule belongs repo-wide, not just in the Documentation Agent.
+
+---
+
+## ✅ How to Verify Your Agent Works
+
+- [ ] `/documentation` appears in the Copilot Chat picker.
+- [ ] Running the agent on `CustomerController` produces:
+  - `@Tag` on the class,
+  - `@Operation` + `@ApiResponse` on every endpoint,
+  - `@Parameter(description = ...)` on every `@PathVariable`,
+  - JavaDoc on every public method (not on trivial getters).
+- [ ] The generated README section includes a **Method / Endpoint / Description**
+      table and at least one working `curl` example.
+- [ ] The controller still compiles (`mvn compile`) and tests pass (`mvn test`).
+
+---
+
 ## 🔗 Related Agents
 
 - [Code Implementation Agent](code-implementation-agent.md) — implement methods before documenting them
